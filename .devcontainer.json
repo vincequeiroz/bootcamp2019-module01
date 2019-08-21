@@ -1,0 +1,10 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details or
+// https://aka.ms/vscode-dev-containers/definitions for sample configurations.
+{
+	"name": "express",
+	"image": "node:lts",
+	"appPort": 3000,
+	"workspaceMount": "src=${PWD-.},dst=/app,type=bind,consistency=cached",
+	"workspaceFolder": "/app",
+	"postCreateCommand": ["yarn"]
+}
